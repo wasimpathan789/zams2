@@ -1,0 +1,137 @@
+.contact-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 400px;
+  background-image: url(../../assets/ac/ac6.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+
+.contact-overlay {
+  background-color: rgba(115, 221, 16, 0.86);
+  background-color: #fab702;
+  opacity: 0.7;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  /* border-radius: 0px -1px 400px 5px; */
+  /* z-index: -10; */
+  clip-path: polygon(
+    0 0%,
+    0% 0,
+    100% 0,
+    90% 70%,
+    0% 700%,
+    100% 100%,
+    10% 100%,
+    0% 100%,
+    0% 100%
+  );
+}
+.contact-content {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+}
+.contact-content > h1 {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+}
+.contact-content > h5 {
+  font-size: 16px;
+  color: white;
+  margin-left: 30%;
+  /* text-align: center; */
+  font-family: Poppins, sans-serif;
+}
+.contact-address {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-left: 30px;
+  margin-top: 30px;
+  color: white;
+}
+.contact-address > p {
+  margin-top: -5px;
+  color: white;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+.contact-content > p {
+  margin-left: 30px;
+  margin-right: 80px;
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+.contact-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 30px;
+  gap: 10px;
+  top: 30px;
+  /* background-color: red; */
+  width: 25%;
+}
+.contact-form > input,
+.contact-form > textarea {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: #fab702;
+  color: #fab702;
+  color: black;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+
+  /* width: 80%; */
+}
+.contact-form > input:focus,
+.contact-form > textarea:focus {
+  outline: #fab702;
+  /* color: #fab702; */
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactForm-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm-btn > button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #fab702;
+  color: white;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+}
+@media screen and (max-width: 1080px) {
+  .contact-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 400px;
+    background-image: url(../../assets/ac/ac6.png);
+    background-size: cover;
+    /* position: absolute; */
+    display: flex;
+  }
+  .contact-form {
+    background-color: purple;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 100%;
+  }
+}

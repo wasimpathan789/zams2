@@ -1,0 +1,8 @@
+.main-contact-wrapper {
+  padding: "50px 30px";
+}
+@media screen and (max-width: 1080px) {
+  .main-contact-wrapper {
+    padding: "50px 10px";
+  }
+}

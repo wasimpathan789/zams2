@@ -1,0 +1,187 @@
+.hero-container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  /* z-index: -22; */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-slide {
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+}
+.sample-slider [class^="swiper-button-"] {
+  color: #fab702;
+  background-color: white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* left: 0; */
+}
+.sample-slider [class^="swiper-button-next"] {
+  color: #fab702;
+  background-color: #fab702;
+  background-color: white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.swiper-button-next {
+  background-color: white;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #fab702 !important;
+  color: white !important;
+}
+
+/* slide contents  */
+.slide-content {
+  /* position: relative; */
+  width: 40%;
+  margin-top: 100px;
+  height: 70%;
+  margin-left: 100px;
+}
+.slide-content > h1 {
+  text-transform: uppercase;
+  font-size: 68px;
+  color: white;
+  font-weight: 700;
+  text-align: start;
+}
+.slide-content > p {
+  color: white;
+  font-weight: 700;
+  text-align: start;
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: "Ysabeau Office", sans-serif;
+}
+.explore-btn {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.explore-btn > button {
+  padding: 13px 30px;
+  background-color: #fab702;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 0;
+  cursor: pointer;
+}
+.hero-overlay {
+  width: 500%;
+  height: 500%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -10000;
+  margin-top: -640px;
+  margin-left: -124px;
+}
+
+/* responsive  */
+@media screen and (max-width: 1080px) {
+  .slide-content {
+    width: 70%;
+    margin-top: 100px;
+    height: 70%;
+    margin-left: 100px;
+  }
+  .slide-content > h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    text-align: start;
+  }
+  .swiper-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hero-container {
+    position: relative;
+    height: 700px;
+    background-color: red;
+    width: 100%;
+  }
+  .slide-content {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .slide-content {
+    width: 70%;
+    margin-top: 30px;
+
+    height: 70%;
+    margin-left: 20px;
+    background-color: transparent;
+    /* z-index: -10; */
+  }
+  .sample-slider [class^="swiper-button-"] {
+    color: #fab702;
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    /* left: 0; */
+    margin-top: 50%;
+  }
+  .slide-content > h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+    text-align: start;
+  }
+  .hero-overlay {
+    margin-top: -640px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sample-slider [class^="swiper-button-"] {
+    margin-top: 70%;
+  }
+}

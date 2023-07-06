@@ -1,0 +1,34 @@
+.project-banner {
+  width: 100%;
+  height: 240px;
+  background: rgba(20, 20, 20, 0.7);
+  background-color: #fab702;
+  background: url(../../assets/ac/ac11.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: relative;
+}
+.project-banner > h1 {
+  color: red;
+  font-size: 36px;
+  z-index: 11;
+}
+.project-banner > h5 {
+  color: red;
+  margin-top: 10px;
+  font-size: 16px;
+  z-index: 1;
+}
+.project-overlays {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.7);
+}
+@media screen and (max-width: 1080px) {
+  .project-banner {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+}
