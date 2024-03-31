@@ -1,0 +1,12 @@
+.main-contact-wrapper {
+  padding: "50px 30px";
+}
+.main-contact{
+  /* width: 100px; */
+  overflow: hidden;
+}
+@media screen and (max-width: 1080px) {
+  .main-contact-wrapper {
+    padding: "50px 10px";
+  }
+}

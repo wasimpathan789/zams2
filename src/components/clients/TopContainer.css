@@ -1,0 +1,30 @@
+.top-container {
+  width: fit-content;
+  height: 55px;
+  border-radius: 40px;
+  border: 1px solid #cad0d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.top-container > h1 {
+  font-size: 20px;
+}
+.top-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: 1px solid #cad0d8;
+  position: absolute;
+  top: -7px;
+}
+@media screen and (max-width: 680px) {
+  .top-dot {
+    right: -7px;
+    top: 23px;
+  }
+}

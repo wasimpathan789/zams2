@@ -1,0 +1,97 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid #fab702;
+  height: 220px;
+  /* padding: 25px 15px; */
+  background: transparent;
+  font-size: 15px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  animation: hithere 1s ease infinite;
+  padding: 30px 15px 15px 15px;
+}
+@keyframes hithere {
+  30% {
+    transform: scale(1.01);
+  }
+  40%,
+  60% {
+    transform: rotate(-1deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.01);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.01);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.serviceCardTop {
+  /* height: 100px; */
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.serviceCardTop > span {
+  size: 90px;
+  font-size: 30px;
+  /* color: #fab702; */
+  color: #8a12e1;
+  color: #6b6bf3;
+}
+.serviceCardTop > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-family: "Baloo Bhai 2", cursive;
+  text-transform: capitalize;
+}
+.serviceCardBottom > p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  text-align: center;
+}
+.service-card:hover,
+.serviceCardTop > span :hover {
+  background-color: #fab702;
+  color: white;
+}
+
+@media screen and (max-width: 530px) {
+  .service-card {
+    height: 230px;
+  }
+}

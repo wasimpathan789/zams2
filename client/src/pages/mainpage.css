@@ -1,9 +1,0 @@
-.mainWrapper {
-  padding: 30px 80px;
-}
-
-@media screen and (max-width: 1080px) {
-  .mainWrapper {
-    padding: 30px 10px;
-  }
-}
